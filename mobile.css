@@ -1,0 +1,107 @@
+/* =======================
+   MOBILE
+======================= */
+
+@media (max-width:767.98px){
+
+section{
+    padding:40px 0;
+}
+
+/* Banner */
+
+#banner img{
+    height:300px;
+}
+
+.banner-text h1{
+    font-size:28px;
+}
+
+.banner-text span{
+    font-size:14px;
+}
+
+/* Navbar */
+
+.navbar-brand{
+    font-size:18px;
+}
+
+.navbar-nav{
+    text-align:center;
+}
+
+.navbar .nav-link{
+    padding:10px 0;
+}
+
+/* About */
+
+#about{
+    text-align:left;
+}
+
+#about .col-lg-6{
+    margin-bottom:30px;
+}
+
+/* Card */
+
+.card{
+    margin-bottom:20px;
+}
+
+.card-body{
+    padding:20px;
+}
+
+.card h3{
+    font-size:22px;
+}
+
+.card h5{
+    font-size:18px;
+}
+
+/* Hobby */
+
+.hobby .col-3{
+    margin-bottom:20px;
+}
+
+/* Certificate */
+
+#certificate img{
+    height:auto;
+}
+
+/* Project */
+
+#project img{
+    height:auto;
+}
+
+.table{
+    font-size:13px;
+}
+
+.table th{
+    width:90px;
+}
+
+/* Footer */
+
+#footer{
+    text-align:center;
+}
+
+#footer .col-md-4{
+    margin-bottom:15px;
+}
+
+#footer a{
+    display:block;
+}
+
+}
