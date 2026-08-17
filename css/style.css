@@ -1,0 +1,115 @@
+/* RESET */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,sans-serif;
+    color:#333;
+    line-height:1.6;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+/* Banner */
+
+#banner{
+    position:relative;
+}
+
+#banner img{
+    width:100%;
+    height:550px;
+    object-fit:cover;
+}
+
+.banner-text{
+    text-align:center;
+}
+
+.banner-text h1{
+    font-size:52px;
+    font-weight:700;
+}
+
+.banner-text span{
+    font-size:20px;
+}
+
+/* Navbar */
+
+.navbar .nav-link{
+    padding:20px;
+    font-weight:600;
+}
+
+.navbar .nav-link i{
+    color:#199cdb;
+}
+
+/* Section */
+
+.section-title{
+    margin-bottom:30px;
+    font-weight:700;
+}
+
+section{
+    padding:70px 0;
+}
+
+/* Job */
+
+.card{
+    border:none;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.progress{
+    height:8px;
+}
+
+/* Hobby */
+
+.hobby i{
+    font-size:30px;
+    color:#199cdb;
+}
+
+/* Certificate */
+
+#certificate img{
+    height:180px;
+    object-fit:cover;
+}
+
+/* Project */
+
+#project img{
+    height:230px;
+    object-fit:cover;
+}
+
+.table th{
+    width:110px;
+}
+
+/* Footer */
+
+#footer{
+    border-top:1px solid #ddd;
+}
+
+#footer a{
+    font-size:18px;
+}

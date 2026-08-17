@@ -1,0 +1,51 @@
+/* =======================
+   TABLET
+======================= */
+
+@media (min-width:768px) and (max-width:991.98px){
+
+section{
+    padding:50px 0;
+}
+
+.banner-text h1{
+    font-size:38px;
+}
+
+.banner-text span{
+    font-size:16px;
+}
+
+#banner img{
+    height:420px;
+}
+
+.navbar-nav{
+    text-align:center;
+}
+
+.card{
+    margin-bottom:20px;
+}
+
+.card-body{
+    padding:20px;
+}
+
+#certificate img{
+    height:180px;
+}
+
+#project img{
+    height:220px;
+}
+
+.table{
+    font-size:14px;
+}
+
+#footer{
+    text-align:center;
+}
+
+}

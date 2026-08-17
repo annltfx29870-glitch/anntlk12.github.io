@@ -1,0 +1,44 @@
+/* =======================
+   LAPTOP
+======================= */
+
+@media (min-width:992px) and (max-width:1199.98px){
+
+.container{
+    max-width:960px;
+}
+
+.banner-text h1{
+    font-size:46px;
+}
+
+.banner-text span{
+    font-size:18px;
+}
+
+.navbar .nav-link{
+    padding:15px;
+}
+
+#banner img{
+    height:500px;
+}
+
+.card-body{
+    padding:25px;
+}
+
+#certificate img{
+    height:170px;
+}
+
+#project img{
+    height:210px;
+}
+
+.table td,
+.table th{
+    font-size:14px;
+}
+
+}
