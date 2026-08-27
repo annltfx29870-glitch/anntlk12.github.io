@@ -42,3 +42,34 @@
 }
 
 }
+@media (min-width: 992px) {
+
+    #footer {
+        min-height: 100px;
+        padding: 32px 0;
+    }
+
+    .footer-social {
+        gap: 32px;
+    }
+
+    .footer-link {
+        gap: 9px;
+    }
+
+    .social-circle {
+        width: 23px;
+        height: 23px;
+    }
+
+    .social-circle i {
+        font-size: 13px;
+        line-height: 1;
+    }
+
+    .social-text {
+        display: inline;
+        font-size: 12px;
+        font-weight: 400;
+    }
+}
