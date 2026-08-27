@@ -113,3 +113,270 @@ section{
 #footer a{
     font-size:18px;
 }
+/* =========================
+   ABOUT
+========================= */
+
+#about {
+    padding: 0;
+}
+
+#about .row {
+    margin: 0;
+}
+
+.about-left,
+.about-right {
+    min-height: 320px;
+    padding: 45px 5%;
+}
+
+.about-left {
+    background: #f7f7f7;
+}
+
+.about-right {
+    background: #f1f1f1;
+}
+
+.about-content {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.about-content h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.about-content p {
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+#email-input {
+    margin-bottom: 3px;
+}
+
+#email-form small {
+    color: #777;
+    font-size: 11px;
+}
+
+#submit-email {
+    margin-top: 5px;
+    padding: 6px 12px;
+    font-size: 13px;
+}
+
+#email-error {
+    color: red;
+    font-size: 13px;
+    margin-top: 8px;
+}
+
+#personal-info {
+    margin-top: 15px;
+}
+
+#personal-info li {
+    margin-bottom: 8px;
+}
+
+.social {
+    margin-top: 15px;
+}
+
+.social i {
+    margin-right: 12px;
+    font-size: 20px;
+    color: #199cdb;
+}
+/* =========================
+   JOB INFO - VIEW MORE
+========================= */
+
+#job-info {
+    background: #fff;
+}
+
+.job-box {
+    position: relative;
+    min-height: 260px;
+    padding: 35px 30px;
+    border: 1px solid #eeeeee;
+    background: #fff;
+    transition: 0.3s;
+}
+
+.job-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.job-title h3 {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.job-title i {
+    font-size: 35px;
+    color: #cfd4d6;
+}
+
+.job-detail {
+    display: none;
+    margin-top: 25px;
+}
+
+.job-detail h5 {
+    font-size: 16px;
+}
+
+.job-detail p,
+.job-detail li {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.time {
+    color: #199cdb;
+}
+
+.time span {
+    background: #199cdb;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 5px;
+}
+
+/* VIEW MORE */
+
+.view-more {
+    display: none;
+
+    border: none;
+    background: #fff9a8;
+    color: #333;
+
+    padding: 5px 15px;
+    border-radius: 20px;
+
+    font-size: 10px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    margin-top: 15px;
+}
+
+/* Khi rê chuột vào card */
+
+.job-box:hover .view-more {
+    display: inline-block;
+}
+
+/* Khi mở */
+
+.job-box.active .job-detail {
+    display: block;
+}
+
+.job-box.active {
+    min-height: 350px;
+}
+
+.job-box.active .view-more {
+    display: inline-block;
+}
+
+/* Hobby */
+
+.hobby-list {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.hobby-list div {
+    text-align: center;
+}
+
+.hobby-list i {
+    font-size: 25px;
+    color: #199cdb;
+}
+
+/* Skill */
+
+.level {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 15px;
+}
+
+.level span {
+    width: 45px;
+    height: 4px;
+    background: #199cdb;
+}
+
+.level span.empty {
+    background: #ddd;
+}
+/* =========================
+   FOOTER
+========================= */
+
+#footer {
+    background: #f7f7f7;
+}
+
+.footer-social {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-social li {
+    list-style: none;
+}
+
+.footer-social li::before {
+    display: none;
+    content: none;
+}
+
+.footer-link {
+    display: flex;
+    align-items: center;
+
+    text-decoration: none;
+    color: #999;
+}
+
+.social-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+
+    background-color: #199cdb;
+    color: #fff;
+}
+
+.social-circle i {
+    color: #fff;
+    margin: 0;
+}
+
+.social-text {
+    color: #999;
+}
