@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -672,7 +672,6 @@
   </section>
 
 <!-- FOOTER -->
-<!-- FOOTER -->
 <footer id="footer">
     <div class="container">
         <ul class="footer-social">
@@ -708,92 +707,57 @@
     </div>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-    const button = document.getElementById("toggle-info");
-    const personalData = document.getElementById("personal-data");
-
-    button.addEventListener("click", function () {
-
-        if (personalData.classList.contains("d-none")) {
-
-            personalData.classList.remove("d-none");
-            button.textContent = "Ẩn thông tin";
-
-        } else {
-
-            personalData.classList.add("d-none");
-            button.textContent = "Xem thông tin";
-
-        }
-
-    });
-
-
-</script>
-<script>
-    const toggleJobInfo = document.getElementById("toggle-job-info");
-    const jobContent = document.getElementById("job-content");
-
-    toggleJobInfo.addEventListener("click", function () {
-
-        if (jobContent.classList.contains("d-none")) {
-
-            jobContent.classList.remove("d-none");
-            toggleJobInfo.textContent = "Ẩn thông tin nghề nghiệp";
-
-        } else {
-
-            jobContent.classList.add("d-none");
-            toggleJobInfo.textContent = "Xem thông tin nghề nghiệp";
-
-        }
-
-    });
-</script>
-
+<!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 
 <script>
+    // =========================
+    // THÔNG TIN CÁ NHÂN
+    // =========================
     const submitEmail = document.getElementById("submit-email");
     const emailInput = document.getElementById("email-input");
     const personalInfo = document.getElementById("personal-info");
     const emailForm = document.getElementById("email-form");
     const emailError = document.getElementById("email-error");
 
-    submitEmail.addEventListener("click", function () {
-
+    function showPersonalInfo() {
         const email = emailInput.value.trim();
 
-        // Kiểm tra email có hợp lệ hay không
+        const emailRegex =
+            /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
         if (email === "") {
             emailError.textContent = "Vui lòng nhập email.";
             return;
         }
 
-        if (!email.includes("@") || !email.includes(".")) {
+        if (!emailRegex.test(email)) {
             emailError.textContent = "Email không hợp lệ.";
             return;
         }
 
-        // Email hợp lệ
         emailError.textContent = "";
-
-        // Ẩn form nhập email
         emailForm.classList.add("d-none");
-
-        // Hiện thông tin cá nhân
         personalInfo.classList.remove("d-none");
-    });
-</script>
+    }
 
-<script>
+    submitEmail.addEventListener("click", showPersonalInfo);
+
+    emailInput.addEventListener("keydown", function (event) {
+        if (event.key === "Enter") {
+            event.preventDefault();
+            showPersonalInfo();
+        }
+    });
+
+
+    // =========================
+    // VIEW MORE / VIEW LESS
+    // =========================
     const viewMoreButtons = document.querySelectorAll(".view-more");
 
     viewMoreButtons.forEach(function (button) {
-
         button.addEventListener("click", function () {
-
             const jobBox = button.closest(".job-box");
 
             jobBox.classList.toggle("active");
@@ -803,9 +767,7 @@
             } else {
                 button.textContent = "VIEW MORE";
             }
-
         });
-
     });
 </script>
 

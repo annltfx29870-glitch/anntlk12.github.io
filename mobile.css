@@ -5,80 +5,101 @@
 
 @media (max-width: 767.98px) {
 
-    /* =========================
-       GENERAL
-    ========================= */
+    * {
+        box-sizing: border-box;
+    }
 
+    html,
     body {
+        width: 100%;
         margin: 0;
         padding: 0;
+        overflow-x: hidden;
+    }
+
+    body {
         font-family: Arial, sans-serif;
-        color: #444;
+        color: #555;
         background: #fff;
     }
 
-    .container,
-    .container-fluid {
-        width: 100%;
+    img {
         max-width: 100%;
-        padding-left: 0;
-        padding-right: 0;
-    }
-
-    section {
-        width: 100%;
+        display: block;
     }
 
 
-    /* =========================
+    /* =====================================================
        BANNER
-       Giống ảnh: banner cao dọc
-    ========================= */
+    ===================================================== */
 
     #banner {
         position: relative;
         width: 100%;
         height: 600px;
+        margin: 0;
+        padding: 0;
         overflow: hidden;
     }
 
     #banner img {
-        width: 100%;
-        height: 600px;
-
+        width: 100% !important;
+        height: 600px !important;
+        max-width: none;
         object-fit: cover;
         object-position: center;
-
         filter: brightness(55%);
     }
 
     .banner-text {
+        position: absolute !important;
+        top: 30% !important;
+        left: 50% !important;
+
         width: 100% !important;
-        padding: 0 10px !important;
-        box-sizing: border-box;
+
+        padding: 0 10px;
+
+        transform: translate(-50%, -50%) !important;
+
+        text-align: center;
     }
 
     .banner-text h1 {
-        font-size: 36px !important;
-        white-space: nowrap !important;
+        margin: 0;
+
+        font-size: 38px !important;
+        font-weight: 400;
+
+        line-height: 1.2;
+
+        color: #fff;
+
+        white-space: nowrap;
     }
 
     .banner-text span {
-        font-size: 16px !important;
-        white-space: nowrap !important;
+        display: block;
+
+        margin-top: 12px;
+
+        font-size: 15px !important;
+
+        color: #ddd;
+
+        white-space: nowrap;
     }
-}
 
 
-    /* =========================
-       NAVBAR MOBILE
-       4 dòng xếp dọc
-    ========================= */
+    /* =====================================================
+       NAVBAR
+    ===================================================== */
 
     .navbar {
         width: 100%;
 
-        padding: 15px 0 18px !important;
+        margin: 0;
+        padding: 18px 0 !important;
 
         background: #fff !important;
 
@@ -87,34 +108,37 @@
     }
 
     .navbar .container {
-        padding: 0 35px;
-    }
+        width: 100%;
+        max-width: 100%;
 
-    .navbar-toggler {
-        display: none !important;
-    }
-
-    .navbar-brand {
-        display: none !important;
+        margin: 0;
+        padding: 0 35px !important;
     }
 
     .navbar-collapse {
         display: block !important;
+        width: 100%;
     }
 
     .navbar-nav {
+        display: flex !important;
+
+        flex-direction: column !important;
+
         width: 100%;
 
-        display: block !important;
-
-        margin: 0;
-        padding: 0;
+        margin: 0 !important;
+        padding: 0 !important;
     }
 
     .navbar-nav .nav-item {
-        width: 100%;
+        display: block;
+
+        width: 100% !important;
+        max-width: 100% !important;
 
         margin: 0;
+        padding: 0;
 
         border: none !important;
 
@@ -123,58 +147,78 @@
 
     .navbar .nav-link {
         width: 100%;
-        height: auto;
+
+        min-height: 42px;
 
         display: flex !important;
-
         justify-content: flex-start !important;
         align-items: center !important;
 
         gap: 5px;
 
-        padding: 10px 0 !important;
+        padding: 8px 0 !important;
 
-        font-size: 13px;
+        font-size: 13px !important;
+        font-weight: 400;
 
         color: #444 !important;
 
-        text-align: left;
+        text-align: left !important;
     }
 
     .navbar .nav-link i {
         width: 16px;
 
+        margin: 0;
+
         font-size: 14px;
 
-        color: #199cdb;
+        color: #199cdb !important;
+
+        text-align: center;
     }
 
-    /* Ẩn tên giữa navbar */
-    .navbar-nav .d-lg-block {
+    /* Không hiện tên/hamburger Bootstrap */
+    .navbar-brand,
+    .navbar-toggler {
         display: none !important;
     }
 
 
-    /* =========================
-       ABOUT MOBILE
-       XẾP DỌC
-    ========================= */
+    /* =====================================================
+       ABOUT
+    ===================================================== */
 
     #about {
-        padding: 0 !important;
+        width: 100%;
+
         margin: 0;
+        padding: 0 !important;
+    }
+
+    #about .container-fluid {
+        width: 100%;
+
+        margin: 0;
+        padding: 0 !important;
     }
 
     #about .row {
         display: block !important;
 
+        width: 100%;
+
         margin: 0 !important;
+        padding: 0 !important;
     }
 
     #about .col-md-6 {
+        display: block;
+
         width: 100% !important;
         max-width: 100% !important;
 
+        margin: 0 !important;
         padding: 0 !important;
     }
 
@@ -184,9 +228,7 @@
 
         min-height: auto;
 
-        padding: 95px 18px 65px !important;
-
-        box-sizing: border-box;
+        padding: 45px 30px !important;
     }
 
     #about .about-left {
@@ -199,18 +241,17 @@
 
     #about .about-content {
         width: 100%;
+        max-width: none;
 
         margin: 0;
         padding: 0;
     }
 
     #about .about-content h2 {
-        margin: 0 0 35px;
+        margin: 0 0 25px;
 
-        font-size: 30px;
+        font-size: 25px;
         font-weight: 400;
-
-        line-height: 1.3;
 
         color: #333;
     }
@@ -218,16 +259,16 @@
     #about .about-content p {
         margin: 0;
 
-        font-size: 15px;
-        line-height: 1.75;
+        font-size: 13px;
+        line-height: 1.7;
 
         color: #666;
     }
 
 
-    /* =========================
-       EMAIL FORM
-    ========================= */
+    /* =====================================================
+       EMAIL
+    ===================================================== */
 
     #email-form {
         width: 100%;
@@ -235,9 +276,11 @@
 
     #email-input {
         width: 100%;
-        height: 42px;
+        height: 38px;
 
-        font-size: 14px;
+        padding: 6px 10px;
+
+        font-size: 13px;
     }
 
     #email-form small {
@@ -251,39 +294,61 @@
     }
 
     #submit-email {
-        margin-top: 10px;
+        margin-top: 8px;
 
-        padding: 7px 14px;
+        padding: 6px 13px;
 
-        font-size: 12px;
+        font-size: 11px;
+    }
+
+    #email-error {
+        margin-top: 7px;
+
+        font-size: 11px;
+
+        color: red;
     }
 
 
-    /* =========================
+    /* =====================================================
        PERSONAL INFO
-    ========================= */
+    ===================================================== */
+
+    #personal-info ul {
+        margin: 0;
+        padding: 0;
+
+        list-style: none;
+    }
 
     #personal-info li {
-        margin-bottom: 8px;
+        margin-bottom: 7px;
 
-        font-size: 14px;
-        line-height: 1.6;
+        font-size: 13px;
+        line-height: 1.5;
     }
 
     #personal-info .social {
-        margin-top: 18px;
+        margin-top: 15px;
+    }
+
+    #personal-info .social i {
+        margin-right: 12px;
+
+        font-size: 16px;
+
+        color: #199cdb;
     }
 
 
-    /* =========================
+    /* =====================================================
        JOB INFO
-       1 CARD / 1 HÀNG
-    ========================= */
+    ===================================================== */
 
     #job-info {
         width: 100%;
 
-        padding: 30px 18px !important;
+        padding: 35px 20px !important;
 
         background: #fff;
     }
@@ -291,43 +356,56 @@
     #job-info .container {
         width: 100%;
         max-width: 100%;
+
+        margin: 0;
+        padding: 0;
     }
 
     #job-info .row {
         display: block !important;
+
+        width: 100%;
 
         margin: 0 !important;
     }
 
     #job-info .col-lg-4,
     #job-info .col-md-6 {
+        display: block;
+
         width: 100% !important;
         max-width: 100% !important;
 
+        margin: 0 0 18px;
         padding: 0 !important;
-
-        margin-bottom: 20px;
     }
 
     .job-box {
+        position: relative;
+
         width: 100%;
+        min-height: 160px;
 
-        min-height: auto !important;
-
-        padding: 30px 25px;
+        padding: 28px 24px;
 
         border: 1px solid #ddd;
 
         background: #fff;
     }
 
-    .job-title {
-        display: flex;
 
-        justify-content: space-between;
+    /* =====================================================
+       JOB TITLE
+    ===================================================== */
+
+    .job-title {
+        display: grid;
+
+        grid-template-columns: 70% 30%;
+
         align-items: center;
 
-        margin-bottom: 20px;
+        margin: 0;
     }
 
     .job-title h3 {
@@ -335,93 +413,320 @@
 
         font-size: 22px;
         font-weight: 400;
+
+        color: #333;
     }
 
     .job-title i {
+        justify-self: end;
+
         font-size: 35px;
 
-        color: #bac2c7;
+        color: #b7c1c7;
     }
+
+
+    /* =====================================================
+       JOB DETAIL
+    ===================================================== */
 
     .job-detail {
         display: none;
 
-        margin-top: 20px;
+        margin-top: 25px;
     }
 
     .job-box.active .job-detail {
         display: block;
     }
 
-    .job-detail h5 {
-        font-size: 15px;
+    .job-box.active {
+        min-height: 300px;
     }
 
-    .job-detail p,
+    .job-detail h5 {
+        margin: 0 0 8px;
+
+        font-size: 14px;
+        font-weight: 500;
+
+        color: #444;
+    }
+
+    .job-detail p {
+        margin: 0 0 8px;
+
+        font-size: 12px;
+        line-height: 1.6;
+
+        color: #666;
+    }
+
+    .job-detail ul {
+        margin: 10px 0 0;
+
+        padding-left: 18px;
+    }
+
     .job-detail li {
-        font-size: 13px;
+        margin-bottom: 5px;
+
+        font-size: 12px;
         line-height: 1.6;
     }
 
+    .job-detail li::marker {
+        color: #199cdb;
+    }
 
-    /* MOBILE luôn hiện VIEW MORE */
+
+    /* =====================================================
+       VIEW MORE
+    ===================================================== */
+
+    /*
+       Điện thoại không có hover ổn định,
+       nên để nút luôn hiện.
+    */
 
     .view-more {
         display: inline-block !important;
 
-        margin-top: 18px;
+        margin-top: 20px;
 
-        padding: 6px 15px;
+        padding: 6px 16px;
 
         border: none;
         border-radius: 20px;
 
         background: #fff4a3;
 
+        color: #333;
+
+        font-size: 10px;
+        font-weight: 500;
+
+        cursor: pointer;
+    }
+
+
+    /* =====================================================
+       TIME
+    ===================================================== */
+
+    .time {
+        font-size: 11px !important;
+
+        color: #777;
+    }
+
+    .time span {
+        display: inline-block;
+
+        padding: 2px 7px;
+
+        border-radius: 5px;
+
+        background: #199cdb;
+
+        color: #fff;
+
         font-size: 10px;
     }
 
 
-    /* =========================
+    /* =====================================================
+       HOBBY
+    ===================================================== */
+
+    .hobby-list {
+        display: flex;
+
+        justify-content: flex-start;
+
+        flex-wrap: wrap;
+
+        gap: 20px;
+    }
+
+    .hobby-list > div {
+        width: 60px;
+
+        text-align: center;
+    }
+
+    .hobby-list i {
+        width: 42px;
+        height: 42px;
+
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+
+        margin: 0 auto 8px;
+
+        border: 1px solid #199cdb;
+        border-radius: 50%;
+
+        font-size: 18px;
+
+        color: #199cdb;
+    }
+
+    .hobby-list p {
+        margin: 0;
+
+        font-size: 10px;
+
+        text-align: center;
+    }
+
+
+    /* =====================================================
+       LEVEL
+    ===================================================== */
+
+    .level {
+        display: flex;
+
+        gap: 5px;
+
+        margin-top: 5px;
+        margin-bottom: 14px;
+    }
+
+    .level span {
+        display: block;
+
+        width: 45px;
+        height: 2px;
+
+        background: #199cdb;
+    }
+
+    .level span.empty {
+        background: #ddd;
+    }
+
+
+    /* =====================================================
        CERTIFICATE
-    ========================= */
+    ===================================================== */
 
     #certificate {
-        padding: 50px 18px !important;
+        width: 100%;
+
+        padding: 45px 25px !important;
+
+        background: #f7f7f7 !important;
+    }
+
+    #certificate .container {
+        width: 100%;
+        max-width: 100%;
+
+        margin: 0;
+        padding: 0;
+    }
+
+    #certificate .section-title {
+        margin: 0 0 30px !important;
+
+        font-size: 25px;
+        font-weight: 400;
+
+        color: #333;
     }
 
     #certificate .row {
-        display: block !important;
+        display: block;
+
+        margin: 0 !important;
     }
 
     #certificate .col-lg-6 {
         width: 100% !important;
         max-width: 100% !important;
 
-        margin-bottom: 25px;
+        margin: 0 0 25px;
+
+        padding: 0 !important;
+    }
+
+    #certificate .card {
+        width: 100%;
+
+        border: none !important;
+
+        box-shadow: none !important;
+
+        background: transparent;
+    }
+
+    #certificate .card .row {
+        display: block !important;
+    }
+
+    #certificate .col-md-5,
+    #certificate .col-md-7 {
+        width: 100% !important;
+        max-width: 100% !important;
     }
 
     #certificate img {
-        width: 100%;
+        width: 100% !important;
+        height: auto !important;
 
-        height: auto;
+        object-fit: cover;
     }
 
-    #certificate .section-title {
-        font-size: 26px;
+    #certificate .card-body {
+        padding: 18px 0;
+    }
+
+    #certificate h5 {
+        font-size: 14px;
+    }
+
+    #certificate p {
+        margin-bottom: 5px;
+
+        font-size: 12px;
     }
 
 
-    /* =========================
+    /* =====================================================
        PROJECT
-    ========================= */
+    ===================================================== */
 
     #project {
-        padding: 50px 18px !important;
+        width: 100%;
+
+        padding: 45px 20px !important;
+
+        background: #fff;
+    }
+
+    #project .container {
+        width: 100%;
+        max-width: 100%;
+
+        margin: 0;
+        padding: 0;
+    }
+
+    #project .section-title {
+        margin: 0 0 30px !important;
+
+        font-size: 25px;
+        font-weight: 400;
     }
 
     #project .row {
-        display: block !important;
+        display: block;
+
+        margin: 0 !important;
     }
 
     #project .col-lg-4,
@@ -429,35 +734,67 @@
         width: 100% !important;
         max-width: 100% !important;
 
-        margin-bottom: 25px;
+        margin: 0 0 25px;
+
+        padding: 0 !important;
+    }
+
+    #project .card {
+        width: 100%;
+        height: auto !important;
     }
 
     #project img {
         width: 100%;
         height: auto;
+
+        object-fit: cover;
     }
 
-    #project .section-title {
-        font-size: 26px;
+    #project .card-body {
+        padding: 18px;
+    }
+
+    #project h5 {
+        font-size: 15px;
+    }
+
+    #project .table {
+        margin-bottom: 0;
+
+        font-size: 11px;
+    }
+
+    #project .table th {
+        width: 80px;
+
+        font-weight: 500;
     }
 
 
-    /* =========================
-       FOOTER MOBILE
-       CHỈ ICON - KHÔNG CHỮ
-    ========================= */
+    /* =====================================================
+       FOOTER
+    ===================================================== */
 
     #footer {
-        min-height: 190px;
-
-        padding: 55px 0;
+        width: 100%;
+        min-height: 180px;
 
         display: flex;
 
         justify-content: center;
         align-items: center;
 
+        padding: 50px 0;
+
         background: #f7f7f7;
+    }
+
+    #footer .container {
+        width: 100%;
+
+        margin: 0;
+        padding: 0;
     }
 
     .footer-social {
@@ -482,6 +819,8 @@
     }
 
     .footer-link {
+        display: block;
+
         text-decoration: none;
     }
 
@@ -504,134 +843,14 @@
     .social-circle i {
         margin: 0;
 
-        color: #fff;
+        font-size: 23px;
 
-        font-size: 25px;
+        color: #fff;
     }
 
+    /* Mobile chỉ hiện icon */
     .social-text {
         display: none !important;
     }
 
-
-/* =====================================================
-   FIX NAV MOBILE - đặt CUỐI mobile.css
-===================================================== */
-
-@media (max-width: 767.98px) {
-
-    /* Ẩn Nguyễn Văn A nhỏ dưới banner */
-    #nav-bar .navbar-brand,
-    .navbar .navbar-brand,
-    .navbar-brand {
-        display: none !important;
-    }
-
-    /* Ẩn nút hamburger */
-    #nav-bar .navbar-toggler,
-    .navbar .navbar-toggler,
-    .navbar-toggler {
-        display: none !important;
-    }
-
-    /* Ép menu luôn mở */
-    #nav-bar .navbar-collapse,
-    .navbar .navbar-collapse,
-    .navbar-collapse,
-    .navbar-collapse.collapse {
-        display: block !important;
-        visibility: visible !important;
-        height: auto !important;
-    }
-
-    /* Menu xếp dọc */
-    #nav-bar .navbar-nav,
-    .navbar .navbar-nav {
-        display: block !important;
-        width: 100% !important;
-        margin: 0 !important;
-        padding: 10px 30px 20px !important;
-    }
-
-    #nav-bar .nav-item,
-    .navbar .nav-item {
-        display: block !important;
-        width: 100% !important;
-        border: 0 !important;
-    }
-
-    #nav-bar .nav-link,
-    .navbar .nav-link {
-        display: flex !important;
-        justify-content: flex-start !important;
-        align-items: center !important;
-
-        width: 100% !important;
-        height: auto !important;
-
-        padding: 10px 0 !important;
-
-        font-size: 13px !important;
-        text-align: left !important;
-
-        color: #444 !important;
-    }
-
-    #nav-bar .nav-link i,
-    .navbar .nav-link i {
-        margin-right: 5px;
-        color: #199cdb !important;
-    }
-}
-@media (max-width: 767.98px) {
-
-    /* NAV MOBILE */
-    .navbar {
-        padding: 15px 0 20px !important;
-        background: #fff !important;
-    }
-
-    .navbar .container {
-        display: block !important;
-        width: 100%;
-        padding: 0 35px !important;
-    }
-
-    .navbar-collapse {
-        display: block !important;
-        width: 100%;
-    }
-
-    .navbar-nav {
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: flex-start !important;
-
-        width: 100%;
-        margin: 0 !important;
-        padding: 0 !important;
-    }
-
-    .navbar-nav .nav-item {
-        display: block;
-        width: 100%;
-        border: 0 !important;
-    }
-
-    .navbar-nav .nav-link {
-        display: flex !important;
-        align-items: center !important;
-        justify-content: flex-start !important;
-
-        width: 100%;
-        padding: 10px 0 !important;
-
-        font-size: 13px !important;
-        color: #444 !important;
-    }
-
-    .navbar-nav .nav-link i {
-        margin-right: 5px;
-        color: #199cdb !important;
-    }
 }
