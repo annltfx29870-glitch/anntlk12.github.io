@@ -54,20 +54,20 @@
 
     .banner-text {
         width: 100% !important;
-        padding: 0 15px;
+        padding: 0 10px !important;
         box-sizing: border-box;
     }
 
     .banner-text h1 {
-        font-size: 32px !important;
-        font-weight: 300;
-        white-space: nowrap;
+        font-size: 36px !important;
+        white-space: nowrap !important;
     }
 
     .banner-text span {
-        font-size: 15px !important;
-        white-space: nowrap;
+        font-size: 16px !important;
+        white-space: nowrap !important;
     }
+}
 
 
     /* =========================
@@ -513,7 +513,7 @@
         display: none !important;
     }
 
-}
+
 /* =====================================================
    FIX NAV MOBILE - đặt CUỐI mobile.css
 ===================================================== */
@@ -579,6 +579,58 @@
 
     #nav-bar .nav-link i,
     .navbar .nav-link i {
+        margin-right: 5px;
+        color: #199cdb !important;
+    }
+}
+@media (max-width: 767.98px) {
+
+    /* NAV MOBILE */
+    .navbar {
+        padding: 15px 0 20px !important;
+        background: #fff !important;
+    }
+
+    .navbar .container {
+        display: block !important;
+        width: 100%;
+        padding: 0 35px !important;
+    }
+
+    .navbar-collapse {
+        display: block !important;
+        width: 100%;
+    }
+
+    .navbar-nav {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+
+        width: 100%;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .navbar-nav .nav-item {
+        display: block;
+        width: 100%;
+        border: 0 !important;
+    }
+
+    .navbar-nav .nav-link {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: flex-start !important;
+
+        width: 100%;
+        padding: 10px 0 !important;
+
+        font-size: 13px !important;
+        color: #444 !important;
+    }
+
+    .navbar-nav .nav-link i {
         margin-right: 5px;
         color: #199cdb !important;
     }
