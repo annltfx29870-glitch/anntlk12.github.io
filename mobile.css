@@ -53,35 +53,20 @@
     }
 
     .banner-text {
-        position: absolute;
-
-        top: 25%;
-        left: 50%;
-
-        width: 100%;
-
-        transform: translate(-50%, -50%);
-
-        text-align: center;
+        width: 100% !important;
+        padding: 0 15px;
+        box-sizing: border-box;
     }
 
     .banner-text h1 {
-        margin: 0;
-
-        font-size: 40px;
+        font-size: 32px !important;
         font-weight: 300;
-
-        color: #fff;
+        white-space: nowrap;
     }
 
     .banner-text span {
-        display: block;
-
-        margin-top: 10px;
-
-        font-size: 16px;
-
-        color: #ddd;
+        font-size: 15px !important;
+        white-space: nowrap;
     }
 
 
@@ -528,4 +513,73 @@
         display: none !important;
     }
 
+}
+/* =====================================================
+   FIX NAV MOBILE - đặt CUỐI mobile.css
+===================================================== */
+
+@media (max-width: 767.98px) {
+
+    /* Ẩn Nguyễn Văn A nhỏ dưới banner */
+    #nav-bar .navbar-brand,
+    .navbar .navbar-brand,
+    .navbar-brand {
+        display: none !important;
+    }
+
+    /* Ẩn nút hamburger */
+    #nav-bar .navbar-toggler,
+    .navbar .navbar-toggler,
+    .navbar-toggler {
+        display: none !important;
+    }
+
+    /* Ép menu luôn mở */
+    #nav-bar .navbar-collapse,
+    .navbar .navbar-collapse,
+    .navbar-collapse,
+    .navbar-collapse.collapse {
+        display: block !important;
+        visibility: visible !important;
+        height: auto !important;
+    }
+
+    /* Menu xếp dọc */
+    #nav-bar .navbar-nav,
+    .navbar .navbar-nav {
+        display: block !important;
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 10px 30px 20px !important;
+    }
+
+    #nav-bar .nav-item,
+    .navbar .nav-item {
+        display: block !important;
+        width: 100% !important;
+        border: 0 !important;
+    }
+
+    #nav-bar .nav-link,
+    .navbar .nav-link {
+        display: flex !important;
+        justify-content: flex-start !important;
+        align-items: center !important;
+
+        width: 100% !important;
+        height: auto !important;
+
+        padding: 10px 0 !important;
+
+        font-size: 13px !important;
+        text-align: left !important;
+
+        color: #444 !important;
+    }
+
+    #nav-bar .nav-link i,
+    .navbar .nav-link i {
+        margin-right: 5px;
+        color: #199cdb !important;
+    }
 }
