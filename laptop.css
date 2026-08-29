@@ -16,7 +16,9 @@
         color: #555;
         background: #fff;
     }
-
+    #navbarNav{
+        justify-content: center;
+    }
     img {
         max-width: 100%;
         display: block;
