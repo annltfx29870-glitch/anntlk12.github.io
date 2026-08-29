@@ -1,0 +1,444 @@
+/* =====================================================
+   STYLE CHUNG
+   Dùng cho tất cả thiết bị
+===================================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    color: #555;
+    background: #fff;
+
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    width: 100%;
+}
+
+
+/* =====================================================
+   BANNER
+===================================================== */
+
+#banner {
+    position: relative;
+
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    overflow: hidden;
+}
+
+#banner img {
+    width: 100%;
+
+    object-fit: cover;
+}
+
+.banner-text {
+    position: absolute;
+
+    left: 50%;
+
+    width: 100%;
+
+    transform: translateX(-50%);
+
+    text-align: center;
+}
+
+.banner-text h1 {
+    margin: 0;
+
+    font-weight: 400;
+
+    color: #fff;
+}
+
+.banner-text span {
+    display: block;
+
+    color: #ddd;
+}
+
+
+/* =====================================================
+   NAVBAR
+===================================================== */
+
+.navbar {
+    width: 100%;
+
+    margin: 0;
+
+    background: #fff !important;
+}
+
+.navbar-nav {
+    list-style: none;
+}
+
+.navbar .nav-link {
+    text-decoration: none;
+
+    color: #555 !important;
+}
+
+.navbar .nav-link i {
+    color: #199cdb;
+}
+
+
+/* =====================================================
+   ABOUT
+===================================================== */
+
+#about {
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+}
+
+#about .container-fluid {
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+}
+
+#about .row {
+    margin: 0;
+}
+
+.about-left {
+    background: #f7f7f7;
+}
+
+.about-right {
+    background: #f1f1f1;
+}
+
+.about-content h2 {
+    color: #333;
+
+    font-weight: 400;
+}
+
+.about-content p {
+    color: #666;
+}
+
+
+/* =====================================================
+   EMAIL
+===================================================== */
+
+#email-form {
+    width: 100%;
+}
+
+#email-input {
+    width: 100%;
+}
+
+#email-form small {
+    color: #777;
+}
+
+#email-error {
+    color: red;
+}
+
+#submit-email {
+    border: none;
+}
+
+
+/* =====================================================
+   PERSONAL INFO
+===================================================== */
+
+#personal-info ul {
+    list-style: none;
+}
+
+#personal-info .social i {
+    color: #199cdb;
+}
+
+
+/* =====================================================
+   JOB INFO
+===================================================== */
+
+#job-info {
+    width: 100%;
+
+    background: #fff;
+}
+
+.job-box {
+    position: relative;
+
+    width: 100%;
+
+    border: 1px solid #ddd;
+
+    background: #fff;
+
+    transition: 0.2s;
+}
+
+.job-title {
+    width: 100%;
+}
+
+.job-title h3 {
+    color: #333;
+
+    font-weight: 400;
+}
+
+.job-title i {
+    color: #b7c1c7;
+}
+
+
+/* =====================================================
+   JOB DETAIL
+===================================================== */
+
+.job-detail h5 {
+    color: #444;
+}
+
+.job-detail p,
+.job-detail li {
+    color: #666;
+}
+
+.job-detail li::marker {
+    color: #199cdb;
+}
+
+
+/* =====================================================
+   TIME
+===================================================== */
+
+.time {
+    color: #777;
+}
+
+.time span {
+    display: inline-block;
+
+    background: #199cdb;
+
+    color: #fff;
+}
+
+
+/* =====================================================
+   VIEW MORE
+===================================================== */
+
+.view-more {
+    border: none;
+
+    border-radius: 20px;
+
+    background: #fff4a3;
+
+    color: #333;
+
+    cursor: pointer;
+}
+
+
+/* =====================================================
+   HOBBY
+===================================================== */
+
+.hobby-list {
+    display: flex;
+}
+
+.hobby-list > div {
+    text-align: center;
+}
+
+.hobby-list i {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid #199cdb;
+    border-radius: 50%;
+
+    color: #199cdb;
+}
+
+
+/* =====================================================
+   LEVEL
+===================================================== */
+
+.level {
+    display: flex;
+}
+
+.level span {
+    display: block;
+
+    background: #199cdb;
+}
+
+.level span.empty {
+    background: #ddd;
+}
+
+
+/* =====================================================
+   CERTIFICATE
+===================================================== */
+
+#certificate {
+    width: 100%;
+
+    background: #f7f7f7;
+}
+
+#certificate .section-title {
+    color: #333;
+
+    font-weight: 400;
+}
+
+#certificate .card {
+    border: none;
+}
+
+#certificate h5 {
+    color: #444;
+}
+
+#certificate p {
+    color: #777;
+}
+
+
+/* =====================================================
+   PROJECT
+===================================================== */
+
+#project {
+    width: 100%;
+
+    background: #fff;
+}
+
+#project .section-title {
+    color: #333;
+
+    font-weight: 400;
+}
+
+#project .card {
+    width: 100%;
+}
+
+#project .card-body h5 {
+    color: #333;
+}
+
+#project .table {
+    color: #666;
+}
+
+#project .table th {
+    color: #555;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+#footer {
+    width: 100%;
+
+    background: #f7f7f7;
+}
+
+.footer-social {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    list-style: none;
+}
+
+.footer-social li {
+    list-style: none;
+}
+
+.footer-link {
+    display: flex;
+
+    align-items: center;
+
+    text-decoration: none;
+}
+
+.social-circle {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+
+    background: #199cdb;
+
+    color: #fff;
+}
+
+.social-circle i {
+    color: #fff;
+}
+
+.social-text {
+    color: #999;
+}

@@ -1,0 +1,726 @@
+/* =====================================================
+   TABLET
+   768px - 991.98px
+===================================================== */
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    * {
+        box-sizing: border-box;
+    }
+
+    html,
+    body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        color: #555;
+        background: #fff;
+    }
+
+    img {
+        max-width: 100%;
+        display: block;
+    }
+
+
+    /* =====================================================
+       BANNER
+    ===================================================== */
+
+    #banner {
+        position: relative;
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+    }
+
+    #banner img {
+        width: 100% !important;
+        height: 300px !important;
+        object-fit: cover;
+        object-position: center;
+        filter: brightness(55%);
+    }
+
+    .banner-text {
+        position: absolute !important;
+        top: 32% !important;
+        left: 50% !important;
+        width: 100%;
+        transform: translate(-50%, -50%) !important;
+        text-align: center;
+    }
+
+    .banner-text h1 {
+        margin: 0;
+        font-size: 34px !important;
+        font-weight: 400;
+        color: #fff;
+        white-space: nowrap;
+    }
+
+    .banner-text span {
+        display: block;
+        margin-top: 5px;
+        font-size: 12px !important;
+        color: #ddd;
+    }
+
+
+    /* =====================================================
+       NAVBAR
+    ===================================================== */
+
+    .navbar {
+        width: 100%;
+        margin: 0;
+        padding: 0 !important;
+        background: #fff !important;
+        border-bottom: 1px solid #eee;
+    }
+
+    .navbar .container {
+        width: 100%;
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .navbar-collapse {
+        display: block !important;
+        width: 100%;
+    }
+
+    .navbar-nav {
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: center;
+        align-items: stretch;
+        width: 100%;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .navbar-nav .nav-item {
+        flex: 0 0 25%;
+        width: 25%;
+        max-width: 25%;
+        text-align: center;
+        border-left: 1px solid #eee;
+    }
+
+    .navbar-nav .nav-item:last-child {
+        border-right: 1px solid #eee;
+    }
+
+    .navbar .nav-link {
+        min-height: 42px;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 4px;
+        padding: 0 5px !important;
+        font-size: 9px !important;
+        color: #555 !important;
+        white-space: nowrap;
+    }
+
+    .navbar .nav-link i {
+        font-size: 10px;
+        color: #199cdb !important;
+    }
+
+    .navbar-brand,
+    .navbar-toggler {
+        display: none !important;
+    }
+
+
+    /* =====================================================
+       ABOUT
+    ===================================================== */
+
+    #about {
+        width: 100%;
+        margin: 0;
+        padding: 0 !important;
+    }
+
+    #about .container-fluid {
+        width: 100%;
+        margin: 0;
+        padding: 0 !important;
+    }
+
+    #about .row {
+        display: flex !important;
+        flex-wrap: nowrap !important;
+        width: 100%;
+        margin: 0 !important;
+    }
+
+    #about .col-md-6 {
+        flex: 0 0 50%;
+        width: 50%;
+        max-width: 50%;
+        margin: 0;
+        padding: 0 !important;
+    }
+
+    #about .about-left,
+    #about .about-right {
+        width: 50%;
+        min-height: 205px;
+        padding: 38px 34px !important;
+    }
+
+    #about .about-left {
+        background: #f7f7f7;
+    }
+
+    #about .about-right {
+        background: #f1f1f1;
+    }
+
+    #about .about-content {
+        width: 100%;
+        max-width: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    #about .about-content h2 {
+        margin: 0 0 20px;
+        font-size: 20px;
+        font-weight: 400;
+        color: #333;
+    }
+
+    #about .about-content p {
+        margin: 0;
+        font-size: 10px;
+        line-height: 1.55;
+        color: #666;
+    }
+
+
+    /* =====================================================
+       EMAIL
+    ===================================================== */
+
+    #email-form {
+        width: 100%;
+    }
+
+    #email-input {
+        width: 100%;
+        height: 30px;
+        padding: 4px 8px;
+        font-size: 10px;
+    }
+
+    #email-form small {
+        display: block;
+        margin-top: 5px;
+        font-size: 8px;
+        color: #777;
+    }
+
+    #submit-email {
+        margin-top: 5px;
+        padding: 4px 9px;
+        font-size: 9px;
+    }
+
+    #email-error {
+        margin-top: 5px;
+        font-size: 9px;
+        color: red;
+    }
+
+
+    /* =====================================================
+       PERSONAL INFO
+    ===================================================== */
+
+    #personal-info ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    #personal-info li {
+        margin-bottom: 4px;
+        font-size: 9px;
+        line-height: 1.45;
+    }
+
+    #personal-info .social {
+        margin-top: 10px;
+    }
+
+    #personal-info .social i {
+        margin-right: 8px;
+        font-size: 11px;
+        color: #199cdb;
+    }
+
+
+    /* =====================================================
+       JOB INFO
+    ===================================================== */
+
+    #job-info {
+        width: 100%;
+        padding: 30px 0 !important;
+        background: #fff;
+    }
+
+    #job-info .container {
+        width: 100%;
+        max-width: 640px !important;
+        margin: 0 auto;
+        padding: 0 10px;
+    }
+
+    #job-info .row {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        margin: 0 -6px !important;
+        row-gap: 10px;
+    }
+
+    #job-info .col-md-6 {
+        flex: 0 0 50%;
+        width: 50%;
+        max-width: 50%;
+        padding: 6px !important;
+        display: flex;
+    }
+
+
+    /* =====================================================
+       SẮP XẾP THỨ TỰ TABLET
+
+       HTML gốc:
+       1 Kinh nghiệm
+       2 Học vấn
+       3 Hoạt động
+       4 Sở thích
+       5 Ngôn ngữ
+       6 Kỹ năng
+
+       Tablet:
+       Kinh nghiệm | Hoạt động
+       Học vấn     | Kỹ năng
+       Ngôn ngữ    | Sở thích
+    ===================================================== */
+
+    #job-info .col-md-6:nth-child(1) {
+        order: 1;
+    }
+
+    #job-info .col-md-6:nth-child(3) {
+        order: 2;
+    }
+
+    #job-info .col-md-6:nth-child(2) {
+        order: 3;
+    }
+
+    #job-info .col-md-6:nth-child(6) {
+        order: 4;
+    }
+
+    #job-info .col-md-6:nth-child(5) {
+        order: 5;
+    }
+
+    #job-info .col-md-6:nth-child(4) {
+        order: 6;
+    }
+
+
+    /* =====================================================
+       JOB BOX
+    ===================================================== */
+
+    .job-box {
+        position: relative;
+        width: 100%;
+        min-height: 240px;
+        padding: 27px 22px;
+        border: 1px solid #ddd;
+        background: #fff;
+    }
+
+    .job-title {
+        display: grid;
+        grid-template-columns: 70% 30%;
+        align-items: center;
+        margin-bottom: 22px;
+    }
+
+    .job-title h3 {
+        margin: 0;
+        font-size: 18px;
+        font-weight: 400;
+        color: #333;
+    }
+
+    .job-title i {
+        justify-self: end;
+        font-size: 30px;
+        color: #b7c1c7;
+    }
+
+
+    /* =====================================================
+       TABLET HIỆN NỘI DUNG LUÔN
+    ===================================================== */
+
+    .job-detail {
+        display: block !important;
+        margin-top: 0;
+    }
+
+    .job-box.active .job-detail {
+        display: block !important;
+    }
+
+    .job-box,
+    .job-box.active {
+        min-height: 240px;
+    }
+
+    .job-detail h5 {
+        margin: 0 0 6px;
+        font-size: 10px;
+        font-weight: 500;
+        color: #444;
+    }
+
+    .job-detail p {
+        margin: 0 0 6px;
+        font-size: 9px;
+        line-height: 1.55;
+        color: #666;
+    }
+
+    .job-detail ul {
+        margin: 8px 0 0;
+        padding-left: 15px;
+    }
+
+    .job-detail li {
+        margin-bottom: 4px;
+        font-size: 9px;
+        line-height: 1.5;
+        color: #666;
+    }
+
+    .job-detail li::marker {
+        color: #199cdb;
+    }
+
+
+    /* Tablet không hiện VIEW MORE */
+    .view-more,
+    .job-box:hover .view-more,
+    .job-box.active .view-more {
+        display: none !important;
+    }
+
+
+    /* =====================================================
+       TIME
+    ===================================================== */
+
+    .time {
+        font-size: 8px !important;
+        color: #777;
+    }
+
+    .time span {
+        display: inline-block;
+        padding: 1px 5px;
+        border-radius: 4px;
+        background: #199cdb;
+        color: #fff;
+        font-size: 7px;
+    }
+
+
+    /* =====================================================
+       HOBBY
+    ===================================================== */
+
+    .hobby-list {
+        display: flex;
+        justify-content: space-between;
+        gap: 6px;
+        flex-wrap: nowrap;
+    }
+
+    .hobby-list > div {
+        width: 25%;
+        text-align: center;
+    }
+
+    .hobby-list i {
+        width: 32px;
+        height: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto 5px;
+        border: 1px solid #199cdb;
+        border-radius: 50%;
+        font-size: 13px;
+        color: #199cdb;
+    }
+
+    .hobby-list p {
+        margin: 0;
+        font-size: 8px;
+        text-align: center;
+    }
+
+
+    /* =====================================================
+       LEVEL
+    ===================================================== */
+
+    .level {
+        display: flex;
+        gap: 4px;
+        margin-top: 4px;
+        margin-bottom: 10px;
+    }
+
+    .level span {
+        display: block;
+        width: 35px;
+        height: 2px;
+        background: #199cdb;
+    }
+
+    .level span.empty {
+        background: #ddd;
+    }
+
+
+    /* =====================================================
+       CERTIFICATE
+    ===================================================== */
+
+    #certificate {
+        padding: 40px 25px !important;
+        background: #f7f7f7 !important;
+    }
+
+    #certificate .container {
+        width: 100%;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    #certificate .section-title {
+        margin-bottom: 28px !important;
+        font-size: 22px;
+        font-weight: 400;
+    }
+
+    #certificate .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #certificate .col-lg-6 {
+        flex: 0 0 50%;
+        width: 50%;
+        max-width: 50%;
+    }
+
+    #certificate .card {
+        height: 100%;
+        box-shadow: none !important;
+        background: transparent;
+    }
+
+    #certificate .card .row {
+        display: flex !important;
+        flex-wrap: nowrap !important;
+    }
+
+    #certificate .col-md-5 {
+        flex: 0 0 42%;
+        width: 42%;
+        max-width: 42%;
+    }
+
+    #certificate .col-md-7 {
+        flex: 0 0 58%;
+        width: 58%;
+        max-width: 58%;
+    }
+
+    #certificate img {
+        width: 100%;
+        height: 100%;
+        min-height: 95px;
+        object-fit: cover;
+    }
+
+    #certificate .card-body {
+        padding: 12px;
+    }
+
+    #certificate h5 {
+        font-size: 10px;
+    }
+
+    #certificate p {
+        margin-bottom: 4px;
+        font-size: 8px;
+    }
+
+
+    /* =====================================================
+       PROJECT
+    ===================================================== */
+
+    #project {
+        padding: 40px 25px !important;
+    }
+
+    #project .container {
+        width: 100%;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    #project .section-title {
+        margin-bottom: 28px !important;
+        font-size: 22px;
+        font-weight: 400;
+    }
+
+    #project .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #project .col-md-6 {
+        flex: 0 0 50%;
+        width: 50%;
+        max-width: 50%;
+        display: flex;
+    }
+
+    #project .card {
+        width: 100%;
+        height: 100%;
+    }
+
+    #project img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+    }
+
+    #project .card-body {
+        padding: 14px;
+    }
+
+    #project h5 {
+        font-size: 11px;
+    }
+
+    #project .badge {
+        font-size: 8px;
+    }
+
+    #project .card-body span {
+        font-size: 8px;
+    }
+
+    #project .table {
+        margin-bottom: 0;
+        font-size: 8px;
+    }
+
+    #project .table th {
+        width: 60px;
+    }
+
+
+    /* =====================================================
+       FOOTER
+    ===================================================== */
+
+    #footer {
+        width: 100%;
+        min-height: 90px;
+        padding: 28px 0;
+        background: #f7f7f7;
+    }
+
+    #footer .container {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .footer-social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .footer-social li {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .footer-link {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        text-decoration: none;
+    }
+
+    .social-circle {
+        width: 21px;
+        height: 21px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background: #199cdb;
+        color: #fff;
+    }
+
+    .social-circle i {
+        margin: 0;
+        font-size: 11px;
+        color: #fff;
+    }
+
+    .social-text {
+        display: inline !important;
+        font-size: 9px;
+        color: #999;
+    }
+
+}
